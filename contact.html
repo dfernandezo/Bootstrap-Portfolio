@@ -44,12 +44,48 @@
       .page {
         background-color: #ffffff;
       }
+      .titulo {
+        padding: 20px;
+        color: #4aaaa5;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 30px;
+        margin-left: 3em;
+        margin-top: 10px;
+      }
+      hr {
+        border-top: 2px solid #cccccc;
+        margin: auto 20px;
+      }
+      p {
+        font-size: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #666666;
+        margin-top: 7px;
+      }
+      input {
+        width: 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        color: #bbbbbb;
+      }
+      footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #666666;
+        padding: 20px;
+        text-align: center;
+        border-top: 5px solid #4aaaa5;
+        color: #dbd6d6;
+      }
     </style>
   </head>
   <body>
     <header
       class="d-flex justify-content-between"
-      style="border-bottom: 1px solid #000; height: 80px;">
+      style="border-bottom: 1px solid #000; height: 80px;"
+    >
       <div class="name text-uppercase d-inline bg-info">Your Name</div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="rayita" href="index.html">About</a>
@@ -58,27 +94,39 @@
       </nav>
     </header>
     <div class="d-flex justify-content-center">
-      <div class="page" style="width: 80%;">
+      <div
+        class="page d-block m-5"
+        style="border: 1px solid #dddddd; width: 80%;"
+        ;
+      >
         <h1 class="titulo">Contact</h1>
         <hr />
         <div class="container">
-        <p>Name</p>
-        <br /><input class="" type="text" id="name" name="Name" value="John Smith" />
-        <p>Email</p>
-        <br /><input
-          type="text"
-          id="email"
-          name="Email"
-          value="example@gmail.com"
-        />
-        <p>Message</p>
-        <br /><input type="text" id="message" name="Message" /> <br />
-        <button type="button">
-          Submit
-        </button>
+          <p>Name</p>
+          <br /><input
+            class="pb-1"
+            type="text"
+            id="name"
+            name="Name"
+            value="John Smith"
+          />
+          <p>Email</p>
+          <br /><input
+            type="text"
+            class="pb-1"
+            id="email"
+            name="Email"
+            value="example@gmail.com"
+          />
+          <p>Message</p>
+          <br /><input class="pb-5" type="text" id="message" name="Message" />
+          <br />
+          <button type="button" class="btn btn-info mt-3 mb-2">
+            Submit
+          </button>
+        </div>
       </div>
     </div>
-
     <footer class="p-3" style="width: 100%; border-top: 5px solid #4aaaa5;">
       <h6>Copyright</h6>
     </footer>
